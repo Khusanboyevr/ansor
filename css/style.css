@@ -45,6 +45,11 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
+
+  user-select: none; /* matnni tanlashni bloklaydi */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .top-line {
   width: 100%;
@@ -81,9 +86,9 @@ body {
 }
 .orange-button:hover {
   display: inline-block;
-  background-color: #77ffff;
+  background-color: #25abff;
   border: none;
-  color: white;
+  color: rgba(0, 0, 0, 70%);
   text-decoration: none;
   padding: 12px 24px;
 }
@@ -234,8 +239,7 @@ body {
 }
 .cta {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -253,35 +257,26 @@ body {
   width: 100%;
   max-width: 1440px;
 }
-.cta-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 156px;
-  height: 42px;
-  font-size: 15px;
-  border-radius: 8px;
-  line-height: 120%;
-  letter-spacing: 2px;
-  background-color: #de2e54;
 
-  color: #ffffff;
-  padding-left: 40px;
-}
-.cta-button:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.cta-button-two {
   display: flex;
-  width: 156px;
-  height: 42px;
-  font-size: 15px;
-  border-radius: 8px;
-  line-height: 120%;
-  letter-spacing: 2px;
-  background-color: #51b1ec;
-  border: 2px solid white;
-  color: #ffffff;
-  padding-left: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+.cta-button-two:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  color: #252420;
+}
+.cta-buttonn {
+  color: white;
+}
+
+.cta-buttonn:hover {
+  color: black;
 }
 .cta-link {
   display: -webkit-box;
@@ -332,6 +327,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   gap: 32px;
+  color: rgb(255, 255, 255);
 }
 .footer-links {
   display: -webkit-box;
@@ -420,5 +416,11 @@ body {
   }
   .why-title {
     font-size: 30px;
+  }
+  .hero-title {
+    text-align: justify;
+  }
+  .hero-text {
+    text-align: justify;
   }
 }
